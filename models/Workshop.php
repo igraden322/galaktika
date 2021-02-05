@@ -16,7 +16,7 @@ use Yii;
  * @property Event[] $events
  * @property Course $course
  */
-class Wokshop extends \yii\db\ActiveRecord
+class Workshop extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}
