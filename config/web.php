@@ -11,10 +11,25 @@ $config = [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
     ],
+    
+    'language' => 'ru-RU',
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'iXEw7ggb2ZlHxbrGbg6tC52EGfTKenP5',
+        ],
+        'i18n' => [
+            'translations' => [
+                '*' => [
+                    'sourceLanguage' => 'ru-RU',
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => '@app/messages/ru-RU',
+                    'fileMap' => [
+                        'app' => 'app.php',
+                        'app/error' => 'error.php',
+                    ],
+                ],
+            ],
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',

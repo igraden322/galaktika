@@ -47,9 +47,9 @@ class Execution extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'eventid' => 'Eventid',
-            'enrollmentid' => 'Enrollmentid',
-            'result' => 'Result',
+            'eventid' => 'Событие',
+            'enrollmentid' => 'Зачисление',
+            'result' => 'Результат',
         ];
     }
 

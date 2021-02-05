@@ -113,3 +113,10 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
+
+.create-course{
+    background-color: rgb(150, 235, 238);
+    color: #a94442;
+    height: 150px;
+    height: 75px;
+}

@@ -48,9 +48,9 @@ class Event extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'workshopid' => 'Workshopid',
-            'typeid' => 'Typeid',
-            'eventdate' => 'Eventdate',
+            'workshopid' => 'Мастерская',
+            'typeid' => 'Тип',
+            'eventdate' => 'Дата',
         ];
     }
 

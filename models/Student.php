@@ -54,12 +54,12 @@ class Student extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'customerid' => 'Customerid',
-            'username' => 'Username',
-            'firstname' => 'Firstname',
-            'lastname' => 'Lastname',
-            'email' => 'Email',
-            'position' => 'Position',
+            'customerid' => 'Закачик',
+            'username' => 'Имя пользователя',
+            'firstname' => 'Имя',
+            'lastname' => 'Фамилия',
+            'email' => 'Почта',
+            'position' => 'Позиция',
         ];
     }
 

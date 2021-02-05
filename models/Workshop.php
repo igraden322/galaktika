@@ -47,9 +47,9 @@ class Workshop extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'courseid' => 'Courseid',
-            'begdate' => 'Begdate',
-            'enddate' => 'Enddate',
+            'courseid' => 'Курс',
+            'begdate' => 'Дата начала',
+            'enddate' => 'Дата окончания',
         ];
     }
 

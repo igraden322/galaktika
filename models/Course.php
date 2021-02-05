@@ -57,14 +57,14 @@ class Course extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'productid' => 'Productid',
-            'name' => 'Name',
-            'target' => 'Target',
-            'duration' => 'Duration',
-            'price' => 'Price',
-            'teacherid' => 'Teacherid',
-            'deployment' => 'Deployment',
-            'status' => 'Status',
+            'productid' => 'ID продукта',
+            'name' => 'Наименование',
+            'target' => 'Цель',
+            'duration' => 'Продолжительности',
+            'price' => 'Цена',
+            'teacherid' => 'Преподаватель',
+            'deployment' => 'Размещение',
+            'status' => 'Статус',
         ];
     }
 

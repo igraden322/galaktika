@@ -48,9 +48,9 @@ class Enrollment extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'workshopid' => 'Workshopid',
-            'studentid' => 'Studentid',
-            'userno' => 'Userno',
+            'workshopid' => 'Мастерская',
+            'studentid' => 'Студент',
+            'userno' => 'Номер пользователя',
         ];
     }
 

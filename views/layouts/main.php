@@ -43,7 +43,7 @@ AppAsset::register($this);
             ['label' => 'Типы событий', 'url' => ['/event-types/index']],
             ['label' => 'Заказчики', 'url' => ['/customer/index']],
             ['label' => 'Курсы', 'url' => ['/course/index']],
-            ['label' => 'Набор', 'url' => ['/enrollment/index']],
+            ['label' => 'Зачисление', 'url' => ['/enrollment/index']],
             ['label' => 'Преподаватели', 'url' => ['/teacher/index']],
             ['label' => 'Мастерская', 'url' => ['/workshop/index']],
             ['label' => 'Студенты', 'url' => ['/student/index']],
@@ -59,7 +59,9 @@ AppAsset::register($this);
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
         <?= Alert::widget() ?>
-        <?= $content ?>
+
+       <?= $content ?>
+
     </div>
 </div>
 
