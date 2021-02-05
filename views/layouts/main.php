@@ -29,7 +29,7 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' =>  'Назначение ресурсов слушателям и анализ выполнения',
+        'brandLabel' =>  '',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
@@ -40,8 +40,15 @@ AppAsset::register($this);
         'items' => [
             ['label' => 'Домой', 'url' => ['/site/index']],
             ['label' => 'События', 'url' => ['/event/index']],
+            ['label' => 'Типы событий', 'url' => ['/event-types/index']],
             ['label' => 'Заказчики', 'url' => ['/customer/index']],
             ['label' => 'Курсы', 'url' => ['/course/index']],
+            ['label' => 'Набор', 'url' => ['/enrollment/index']],
+            ['label' => 'Преподаватели', 'url' => ['/teacher/index']],
+            ['label' => 'Мастерская', 'url' => ['/workshop/index']],
+            ['label' => 'Студенты', 'url' => ['/student/index']],
+            ['label' => 'Выполнение', 'url' => ['/execution/index']],
+            ['label' => 'Продукты', 'url' => ['/product/index']],
         ],
     ]);
     NavBar::end();
