@@ -1,18 +1,18 @@
 <?php
 
-namespace app\models;
+namespace app\controllers;
 
 use Yii;
-use app\models\Course;
-use app\models\CourseSearch;
+use app\models\Execution;
+use app\models\ExecutionSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * CourseController implements the CRUD actions for Course model.
+ * ExecutionController implements the CRUD actions for Execution model.
  */
-class CourseController extends Controller
+class ExecutionController extends Controller
 {
     /**
      * {@inheritdoc}
@@ -30,12 +30,12 @@ class CourseController extends Controller
     }
 
     /**
-     * Lists all Course models.
+     * Lists all Execution models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new CourseSearch();
+        $searchModel = new ExecutionSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -45,7 +45,7 @@ class CourseController extends Controller
     }
 
     /**
-     * Displays a single Course model.
+     * Displays a single Execution model.
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
@@ -58,13 +58,13 @@ class CourseController extends Controller
     }
 
     /**
-     * Creates a new Course model.
+     * Creates a new Execution model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Course();
+        $model = new Execution();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -76,7 +76,7 @@ class CourseController extends Controller
     }
 
     /**
-     * Updates an existing Course model.
+     * Updates an existing Execution model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -96,7 +96,7 @@ class CourseController extends Controller
     }
 
     /**
-     * Deletes an existing Course model.
+     * Deletes an existing Execution model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -110,15 +110,15 @@ class CourseController extends Controller
     }
 
     /**
-     * Finds the Course model based on its primary key value.
+     * Finds the Execution model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Course the loaded model
+     * @return Execution the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Course::findOne($id)) !== null) {
+        if (($model = Execution::findOne($id)) !== null) {
             return $model;
         }
 
