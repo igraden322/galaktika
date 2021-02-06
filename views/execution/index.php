@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\ExecutionSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Executions';
+$this->title = 'Выполнение';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="execution-index">
@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Execution', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a(Yii::t('app', 'Create'), ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>

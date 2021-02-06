@@ -14,12 +14,17 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'courseid')->textInput() ?>
 
-    <?= $form->field($model, 'begdate')->textInput() ?>
-
-    <?= $form->field($model, 'enddate')->textInput() ?>
+    <?= $form->field($model, 'begdate')->widget(yii\jui\DatePicker::classname(), [
+    'language' => 'ru',
+    'dateFormat' => 'yyyy-MM-dd',
+    ]) ?>
+    <?= $form->field($model, 'enddate')->widget(yii\jui\DatePicker::classname(), [
+    'language' => 'ru',
+    'dateFormat' => 'yyyy-MM-dd',
+    ]) ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton(Yii::t('app', 'Save'), ['class' => 'btn btn-success']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>
