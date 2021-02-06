@@ -48,7 +48,7 @@ class Event extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'workshopid' => 'Мастерская',
+            'workshopid' => 'Семинар',
             'typeid' => 'Тип',
             'eventdate' => 'Дата',
         ];
@@ -82,5 +82,9 @@ class Event extends \yii\db\ActiveRecord
     public function getExecutions()
     {
         return $this->hasMany(Execution::className(), ['eventid' => 'id']);
+    }
+
+    public function getName(){
+        return 'Семинар №'.$this->workshop->id.', '.$this->type->name.' ('.$this->eventdate.')';
     }
 }

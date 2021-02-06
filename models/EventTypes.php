@@ -41,6 +41,7 @@ class EventTypes extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'name' => 'Наименование',
+            'eventtypes' => 'Тип событий'
         ];
     }
 

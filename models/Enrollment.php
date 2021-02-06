@@ -48,9 +48,10 @@ class Enrollment extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'workshopid' => 'Мастерская',
+            'workshopid' => 'Семинар',
             'studentid' => 'Студент',
             'userno' => 'Номер пользователя',
+            'enrollment' => 'Зачисление'
         ];
     }
 
@@ -82,5 +83,9 @@ class Enrollment extends \yii\db\ActiveRecord
     public function getExecutions()
     {
         return $this->hasMany(Execution::className(), ['enrollmentid' => 'id']);
+    }
+
+    public function getEnrollment(){
+        return $this->student->firstname.' '.$this->student->lastname.' (Семинар №'.$this->workshopid.' '.$this->workshop->begdate.' - '.$this->workshop->enddate.')';
     }
 }

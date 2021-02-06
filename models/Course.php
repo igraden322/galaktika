@@ -57,7 +57,7 @@ class Course extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'productid' => 'ID продукта',
+            'productid' => 'Объект изучения',
             'name' => 'Наименование',
             'target' => 'Цель',
             'duration' => 'Продолжительности',
@@ -65,6 +65,7 @@ class Course extends \yii\db\ActiveRecord
             'teacherid' => 'Преподаватель',
             'deployment' => 'Размещение',
             'status' => 'Статус',
+            'course' => 'Курс'
         ];
     }
 

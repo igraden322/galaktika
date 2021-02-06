@@ -50,6 +50,7 @@ class Execution extends \yii\db\ActiveRecord
             'eventid' => 'Событие',
             'enrollmentid' => 'Зачисление',
             'result' => 'Результат',
+            'execution' => 'Выполнение'
         ];
     }
 

@@ -60,6 +60,7 @@ class Student extends \yii\db\ActiveRecord
             'lastname' => 'Фамилия',
             'email' => 'Почта',
             'position' => 'Позиция',
+            'student' => 'Студент'
         ];
     }
 
@@ -81,5 +82,9 @@ class Student extends \yii\db\ActiveRecord
     public function getCustomer()
     {
         return $this->hasOne(Customer::className(), ['id' => 'customerid']);
+    }
+
+    public function getFio(){
+        return $this->firstname.' '.$this->lastname.'(Закачик - '.$this->customer->name.')';
     }
 }

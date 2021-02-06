@@ -41,6 +41,7 @@ class Teacher extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'name' => 'Имя',
+            'Teacher' => 'Преподаватель'
         ];
     }
 

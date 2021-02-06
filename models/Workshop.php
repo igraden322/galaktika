@@ -50,6 +50,7 @@ class Workshop extends \yii\db\ActiveRecord
             'courseid' => 'Курс',
             'begdate' => 'Дата начала',
             'enddate' => 'Дата окончания',
+            'workshop' => 'Семинар'
         ];
     }
 
@@ -81,5 +82,10 @@ class Workshop extends \yii\db\ActiveRecord
     public function getCourse()
     {
         return $this->hasOne(Course::className(), ['id' => 'courseid']);
+    }
+
+    public function getDuration()
+    {
+        return $this->begdate.' - '.$this->enddate.'(Семинар № '.$this->id.')';
     }
 }

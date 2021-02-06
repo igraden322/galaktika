@@ -54,6 +54,7 @@ class Customer extends \yii\db\ActiveRecord
             'phone' => 'Телефон',
             'email' => 'Почта',
             'contact' => 'Контакт',
+            'customers' => 'Заказчики'
         ];
     }
 

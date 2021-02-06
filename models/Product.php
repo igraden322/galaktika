@@ -45,6 +45,7 @@ class Product extends \yii\db\ActiveRecord
             'id' => 'ID',
             'name' => 'Наименование',
             'username' => 'Имя пользователя',
+            'product' => 'Объект изучения'
         ];
     }
 
