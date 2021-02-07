@@ -11,7 +11,7 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 use yii\db\Connection;
-
+use app\widgets\Alert;
 
 class SiteController extends Controller
 {
@@ -70,11 +70,9 @@ class SiteController extends Controller
     public function actionReport()
     {
         $model = new ReportForm();
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect('index');
+        if($model->load(Yii::$app->request->post())){
+            Yii::$app->session->setFlash('success', 'Отчёт был создан');
         }
-
         return $this->render('report', [
             'model' => $model,
         ]);
