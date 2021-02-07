@@ -88,4 +88,8 @@ class Workshop extends \yii\db\ActiveRecord
     {
         return $this->begdate.' - '.$this->enddate.'(Семинар № '.$this->id.')';
     }
+
+    public function getDate(){
+        return $this->begdate.' - '.$this->enddate;
+    }
 }
