@@ -27,12 +27,20 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            'productid',
+            [
+                'attribute' => 'productid',
+                'value' => 'product.name',
+                'label' => 'Объект изучения'
+            ],
             'name',
             'target',
             'duration',
-            //'price',
-            //'teacherid',
+            'price',
+            [
+                'attribute' => 'teacherid',
+                'value' => 'teacher.name',
+                'label' => 'Преподаватель'
+            ],
             //'deployment:ntext',
             //'status',
 

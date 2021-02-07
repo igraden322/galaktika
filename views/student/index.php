@@ -27,12 +27,16 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            'customerid',
+            [
+                'attribute' => 'customerid',
+                'value' => 'customer.name',
+                'label' => 'Заказчик'
+            ],
             'username',
             'firstname',
             'lastname',
-            //'email:email',
-            //'position',
+            'email:email',
+            'position',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

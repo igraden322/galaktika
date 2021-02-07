@@ -27,8 +27,16 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            'eventid',
-            'enrollmentid',
+            [
+                'attribute' => 'eventid',
+                'value' => 'event.name',
+                'label' => 'Событие'
+            ],
+            [
+                'attribute' => 'enrollmentid',
+                'value' => 'enrollmentid',
+                'label' => 'Зачисление №'
+            ],
             'result:ntext',
 
             ['class' => 'yii\grid\ActionColumn'],

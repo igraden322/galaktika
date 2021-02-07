@@ -27,8 +27,16 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            'workshopid',
-            'typeid',
+            [
+                'attribute' => 'workshopid',
+                'value' => 'workshop.duration',
+                'label' => 'Семинар'
+            ],
+            [
+                'attribute' => 'typeid',
+                'value' => 'type.name',
+                'label' => 'Тип'
+            ],
             'eventdate',
 
             ['class' => 'yii\grid\ActionColumn'],
