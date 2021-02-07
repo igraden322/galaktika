@@ -144,6 +144,56 @@ a.desc:after {
 }
 
 
+.create-report{
+    background-color: rgba(68, 173, 103, 0.884);
+    height: 350px;
+    width: 350px;
+    text-align: center;
+    border-radius: 7px;
+    font-family: 'Roboto';
+    font-size: 48px;
+    position: relative;
+    display: block;
+    transition-duration: 0.5s;
+}
+
+.create-report text{
+    color: #ffffff;
+    position: relative;
+    top: 25%;
+}
+
+.create-report:hover{
+    transform: scale(1.03);
+    transition-duration: 0.5s;
+    background-color: #36da44;
+}
+
+.create-enrollment{
+    background-color: rgba(233, 231, 130, 0.884);
+    height: 350px;
+    width: 350px;
+    text-align: center;
+    border-radius: 7px;
+    font-family: 'Roboto';
+    font-size: 48px;
+    position: relative;
+    display: block;
+    transition-duration: 0.5s;
+}
+
+.create-enrollment text{
+    color: #ffffff;
+    position: relative;
+    top: 25%;
+}
+
+.create-enrollment:hover{
+    transform: scale(1.03);
+    transition-duration: 0.5s;
+    background-color: #adac50;
+}
+
 
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
     border-color: #101010;
@@ -160,6 +210,10 @@ a.desc:after {
     color: #101010;
 }
 
+.site-index-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
 .hasDatepicker{
     display: block;
